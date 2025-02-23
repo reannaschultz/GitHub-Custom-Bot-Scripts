@@ -1,0 +1,20 @@
+[
+  {
+    "name": "timeout",  // The command name that users will type (e.g., /timeout)
+    "description": "Timeout a user",  // Short description of what the command does
+    "options": [  
+      {
+        "name": "user",  // The first required parameter: selecting the user to timeout
+        "description": "User to timeout",  // Describes what this parameter does
+        "type": 6,  // Type 6 = A Discord user mention
+        "required": true  // This parameter is mandatory
+      },
+      {
+        "name": "duration",  // The second required parameter: duration of the timeout
+        "description": "Timeout duration (in minutes)",  // Explains what this parameter does
+        "type": 4,  // Type 4 = An integer (numerical input)
+        "required": true  // This parameter is also mandatory
+      }
+    ]
+  }
+]
